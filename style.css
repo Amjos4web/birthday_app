@@ -11,7 +11,12 @@ body {
     display: flex;
     flex-direction: column;
     background: linear-gradient(#9485f4, #7fff62);
+    background-image: linear-gradient(to bottom, transparent, #7fff62), url(background_image.jpeg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
     animation: changeBg 6s linear infinite;
+    
 }
 @keyframes changeBg {
     0% {
@@ -253,5 +258,10 @@ div .layer:nth-child(2) {
     }
     .paragraph-text span {
         font-size: 70px;
+    }
+}
+@media screen and (min-width: 800px) {
+    body{
+        background-position: center; 
     }
 }
